@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  /* font-family: "Merriweather", system-ui; */
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #242424;
+  color: #fff;
+  --color-primary: #5fc2fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+
+.profile-header {
+  display: flex;
+}
+
+.profile-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 0.8;
+  gap: 10px;
+  background-color: #333;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.profile-left > img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.profile-left > h1 {
+  text-align: center;
+  width: 200px;
+}
+
+.profile-left > section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-left > section > a {
+  margin: 5px;
+}
+
+.profile-left > section > a:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.profile-left > section > a > img {
+  width: 28px;
+  height: 28px;
+}
+
+.profile-right {
+  flex: 2;
+  padding: 18px 26px;
+}
+
+.profile-right > h2 {
+  /* font-family: "Merriweather", system-ui; */
+  font-size: 32px;
+}
+
+.profile-right > p {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.profile-all {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.profile-lists {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-lists > section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  margin: 10px;
+}
+
+.profile-lists > section > ul,
+.profile-lists > section > ol {
+  background-color: #333;
+  border-radius: 12px;
+  padding: 12px;
+  padding-left: 25px;
+}
+
+.profile-lists > section > ul > li,
+.profile-lists > section > ol > li {
+  font-size: 18px;
+}
+
+.profile-media {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-media > section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 16px;
+}
+
+.profile-media > section > div {
+  display: flex;
+  gap: 16px;
+  background-color: #333;
+  border-radius: 12px;
+  padding: 10px;
+  width: min-content;
+}
+
+.profile-media > section > div > img {
+  width: 90px;
+  height: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.profile-media > section > div > section {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.profile-media > section > div > section > audio {
+  margin-top: 10px;
+}
+
+.profile-media > section > video {
+  width: 500px;
+  height: 300px;
+  border-radius: 12px;
+  border: 1px solid #fff;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+}
+
+.profile-link > img {
+  width: 20px;
+  height: 20px;
+}
+
+b {
+  background-color: #333;
+  padding: 0 6px;
+  border-radius: 8px;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #333;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #333;
+}
